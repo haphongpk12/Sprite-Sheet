@@ -67,22 +67,21 @@ def find_most_common_color(image):
 
 
 def create_sprite_labels_image(sprites, label_map, background_color=(255, 255, 255)):
+    color_dict = {}
+    for key in sprites:
+        color_dict[key] = create_random_color(background_color)
+        for row in range(sprites[key].y1, sprites[key].y2 + 1):
+            for col in range(sprites[key].x1, sprites[key].x2 + 1):
+                if row == sprites[key].y1 or row == sprites[key].y2:
+                    label_map[row][col].label = key
+                elif col == sprites[key].x1 or col == sprites[key].x2:
+                    label_map[row][col].label = key
     for row in range(len(label_map)):
         for col in range(len(label_map[row])):
             if label_map[row][col].label == 0:
                 label_map[row][col] = background_color
             else:
-                label_map[row][col] = label_map[row][col].label
-    for key in sprites:
-        color = create_random_color(background_color)
-        for row in range(sprites[key].y1, sprites[key].y2 + 1):
-            for col in range(sprites[key].x1, sprites[key].x2 + 1):
-                if label_map[row][col] != background_color:
-                    label_map[row][col] = color
-                if row == sprites[key].y1 or row == sprites[key].y2:
-                    label_map[row][col] = color
-                elif col == sprites[key].x1 or col == sprites[key].x2:
-                    label_map[row][col] = color
+                label_map[row][col] = color_dict[label_map[row][col].label]
     return Image.fromarray(np.array(label_map, dtype=np.uint8))
 
 
@@ -217,7 +216,7 @@ def is_on_area(row, col, image):
 
 if __name__ == "__main__":
     image = Image.open(
-        "./resources/test1.png")
+        "./resources/optimized_sprite_sheet.png")
     # image = image.convert("L")
     # print(find_most_common_color(image))
     # print(np.array(image))
@@ -225,4 +224,4 @@ if __name__ == "__main__":
     # find_sprites(image)
     sprites, label_map = find_sprites(image)
     sprite_label_image = create_sprite_labels_image(sprites, label_map)
-    sprite_label_image.save('./test1.png')
+    sprite_label_image.save('./optimized_sprite_sheet_bounding_box_white_background.png')
