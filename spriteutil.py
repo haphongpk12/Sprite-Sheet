@@ -66,6 +66,33 @@ def find_most_common_color(image):
     return max(color_count.items(), key=operator.itemgetter(1))[0]
 
 
+def create_sprite_labels_image(sprites, label_map, background_color=(255, 255, 255)):
+    for row in range(len(label_map)):
+        for col in range(len(label_map[row])):
+            if label_map[row][col].label == 0:
+                label_map[row][col] = background_color
+            else:
+                label_map[row][col] = label_map[row][col].label
+    for key in sprites:
+        color = create_random_color(background_color)
+        for row in range(sprites[key].y1, sprites[key].y2 + 1):
+            for col in range(sprites[key].x1, sprites[key].x2 + 1):
+                if label_map[row][col] != background_color:
+                    label_map[row][col] = color
+                if row == sprites[key].y1 or row == sprites[key].y2:
+                    label_map[row][col] = color
+                elif col == sprites[key].x1 or col == sprites[key].x2:
+                    label_map[row][col] = color
+    return Image.fromarray(np.array(label_map, dtype=np.uint8))
+
+
+def create_random_color(background_color):
+    if len(background_color) == 4:
+        return (np.random.randint(0, 255), np.random.randint(0, 255), np.random.randint(0, 255), np.random.randint(0, 255))
+    else:
+        return (np.random.randint(0, 255), np.random.randint(0, 255), np.random.randint(0, 255))
+
+
 def find_sprites(image, background_color=None):
     label_map = draw_map(image)
     label = 0
@@ -190,15 +217,12 @@ def is_on_area(row, col, image):
 
 if __name__ == "__main__":
     image = Image.open(
-        "./resources/optimized_sprite_sheet.png")
+        "./resources/test1.png")
     # image = image.convert("L")
     # print(find_most_common_color(image))
     # print(np.array(image))
     # print(image.mode)
     # find_sprites(image)
     sprites, label_map = find_sprites(image)
-    print(len(sprites))
-    for label, sprite in sprites.items():
-        print(
-            f"Sprite ({label}): [{sprite.top_left}, {sprite.bottom_right}] {sprite.width}x{sprite.height}")
-    # pprint.pprint(label_map, width=1200)
+    sprite_label_image = create_sprite_labels_image(sprites, label_map)
+    sprite_label_image.save('./test1.png')
