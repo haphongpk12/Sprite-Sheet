@@ -1,7 +1,0 @@
-README.md
-setup.py
-sprite_util_tkhang.egg-info/PKG-INFO
-sprite_util_tkhang.egg-info/SOURCES.txt
-sprite_util_tkhang.egg-info/dependency_links.txt
-sprite_util_tkhang.egg-info/requires.txt
-sprite_util_tkhang.egg-info/top_level.txt

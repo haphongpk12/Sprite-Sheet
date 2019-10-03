@@ -76,7 +76,7 @@ Go to this link and download new python version: https://www.python.org/download
 ### Install my package
 
 ```bash
-pip install sprite-util-tkhang
+pip install spriteutil-tkhang
 ```
 
 ## Contact (Author & Maintainer)
