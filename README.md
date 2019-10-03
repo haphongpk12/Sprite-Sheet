@@ -28,7 +28,7 @@ It can split your image with many sprites and you can improve it to work in Comp
 
 ## Technology
 
-- Python (PIL, Numpy)
+- Python (Pillow, Numpy)
 
 ## Project Team
 - Lam Khang Tran
@@ -59,7 +59,6 @@ You have to install packages above:
 
 ```bash
 pip install pillow
-
 pip install numpy
 ```
 
@@ -77,5 +76,3 @@ pip install sprite_util
 - Email: haphongpk12@gmail.com
 - Facebook: https://www.facebook.com/haphongpk12
 - Phone: (+84) 909 77 8046
-
-![](./resources/Ava.jpg)
