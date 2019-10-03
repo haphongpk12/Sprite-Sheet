@@ -20,6 +20,7 @@ Sprites are mainly used in 2D video games, such as Shoot'em up in which the hero
 ## Project Benefit
 
 Three main features of this project, more useful in Computer Vision:
+
 - Find the Most Common Color in an Image
 - Find Sprites in an Image
 - Draw Sprite Label Bounding Boxes
@@ -31,6 +32,7 @@ It can split your image with many sprites and you can improve it to work in Comp
 - Python (Pillow, Numpy)
 
 ## Project Team
+
 - Lam Khang Tran
 
 ## Feature
@@ -51,7 +53,7 @@ Returns a tuple (sprites, label_map) where:
 
 Draws the masks of the sprites at the exact same position that the sprites were in the original image. Draws each sprite mask with a random uniform color (one color per sprite mask). Also draws a rectangle (bounding box) around each sprite mask, of the same color used for drawing the sprite mask.
 
-## How to use?
+## How to use
 
 ### Install packages: pillow (PIL), numpy
 
@@ -67,12 +69,12 @@ pip install numpy
 After install pillow (PIL), numpy & Python 3.7.4, install my package: sprite_util
 
 ```bash
-pip install sprite_util
+pip install sprite-util
 ```
 
 ## Contact (Author & Maintainer)
 
 - Name: Khang TRAN
 - Email: haphongpk12@gmail.com
-- Facebook: https://www.facebook.com/haphongpk12
+- Facebook: ![https://www.facebook.com/haphongpk12]
 - Phone: (+84) 909 77 8046
