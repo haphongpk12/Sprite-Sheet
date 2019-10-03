@@ -69,13 +69,15 @@ and
 pip install numpy
 ```
 
+### Install New Python 3.7.4
+
+Go to this link and download new python version: https://www.python.org/downloads/
+
 ### Install my package
 
 ```bash
-pip install sprite-util-intek
+pip install sprite-util-tkhang
 ```
-
-### Install New Python 3.7.4
 
 ## Contact (Author & Maintainer)
 
