@@ -1,0 +1,6 @@
+README.md
+setup.py
+khangtranspriteutil.egg-info/PKG-INFO
+khangtranspriteutil.egg-info/SOURCES.txt
+khangtranspriteutil.egg-info/dependency_links.txt
+khangtranspriteutil.egg-info/top_level.txt

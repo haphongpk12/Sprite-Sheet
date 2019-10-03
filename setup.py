@@ -6,7 +6,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-__name__ = "spriteutil_tkhang"
+__name__ = "spriteutilkhangtran"
 __version__ = "1.0.0"
 __author__ = "Khang TRAN"
 __author_email__ = "haphong12@gmail.com"
