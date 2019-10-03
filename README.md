@@ -29,7 +29,7 @@ It can split your image with many sprites and you can improve it to work in Comp
 
 ## Technology
 
-- Python (Pillow, Numpy)
+- Python (PIL, Numpy)
 
 ## Project Team
 
@@ -53,24 +53,29 @@ Returns a tuple (sprites, label_map) where:
 
 Draws the masks of the sprites at the exact same position that the sprites were in the original image. Draws each sprite mask with a random uniform color (one color per sprite mask). Also draws a rectangle (bounding box) around each sprite mask, of the same color used for drawing the sprite mask.
 
-## How to use
+## How to use?
 
-### Install packages: pillow (PIL), numpy
+### Install packages: pillow (PIL), numpy, python 3.7.4
 
 You have to install packages above:
 
 ```bash
 pip install pillow
+```
+
+and
+
+```bash
 pip install numpy
 ```
 
-### Install New Python 3.7.4
-
-After install pillow (PIL), numpy & Python 3.7.4, install my package: sprite_util
+### Install my package
 
 ```bash
-pip install sprite-util
+pip install sprite-util-intek
 ```
+
+### Install New Python 3.7.4
 
 ## Contact (Author & Maintainer)
 
@@ -78,3 +83,5 @@ pip install sprite-util
 - Email: haphongpk12@gmail.com
 - Facebook: https://www.facebook.com/haphongpk12
 - Phone: (+84) 909 77 8046
+
+![](./resources/Ava.jpg)
