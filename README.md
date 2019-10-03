@@ -59,17 +59,20 @@ You have to install packages above:
 
 ```bash
 pip install pillow
-```
 
-and
-
-```bash
 pip install numpy
 ```
 
 ### Install New Python 3.7.4
 
+After install pillow (PIL), numpy & Python 3.7.4, install my package: sprite_util
+
+```bash
+pip install sprite_util
+```
+
 ## Contact (Author & Maintainer)
+
 - Name: Khang TRAN
 - Email: haphongpk12@gmail.com
 - Facebook: https://www.facebook.com/haphongpk12
