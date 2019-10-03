@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: sprite-util-tkhang
-Version: 1.0.0
+Version: 1.0.1
 Summary: UNKNOWN
 Home-page: https://github.com/haphongpk12/Sprite-Sheet
 Author: Khang TRAN
@@ -83,7 +83,7 @@ Description: # Sprite Sheet
         
         Draws the masks of the sprites at the exact same position that the sprites were in the original image. Draws each sprite mask with a random uniform color (one color per sprite mask). Also draws a rectangle (bounding box) around each sprite mask, of the same color used for drawing the sprite mask.
         
-        ## How to use?
+        ## Usage
         
         ### Install packages: pillow (PIL), numpy, python 3.7.4
         
@@ -116,7 +116,6 @@ Description: # Sprite Sheet
         - Facebook: https://www.facebook.com/haphongpk12
         - Phone: (+84) 909 77 8046
         
-        ![](./resources/Ava.jpg)
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License

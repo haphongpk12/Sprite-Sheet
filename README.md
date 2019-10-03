@@ -53,7 +53,7 @@ Returns a tuple (sprites, label_map) where:
 
 Draws the masks of the sprites at the exact same position that the sprites were in the original image. Draws each sprite mask with a random uniform color (one color per sprite mask). Also draws a rectangle (bounding box) around each sprite mask, of the same color used for drawing the sprite mask.
 
-## How to use?
+## Usage
 
 ### Install packages: pillow (PIL), numpy, python 3.7.4
 

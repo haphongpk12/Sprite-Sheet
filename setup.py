@@ -7,7 +7,7 @@ def read(fname):
 
 
 __name__ = "sprite_util_tkhang"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Khang TRAN"
 __author_email__ = "haphong12@gmail.com"
 __copyright__ = "Copyright (C) 2019, Intek Institute"
