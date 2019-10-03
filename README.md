@@ -76,5 +76,5 @@ pip install sprite-util
 
 - Name: Khang TRAN
 - Email: haphongpk12@gmail.com
-- Facebook: ![https://www.facebook.com/haphongpk12]
+- Facebook: https://www.facebook.com/haphongpk12
 - Phone: (+84) 909 77 8046
