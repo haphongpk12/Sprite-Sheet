@@ -72,4 +72,4 @@ pip install numpy
 - Email: haphongpk12@gmail.com
 - Facebook: https://www.facebook.com/haphongpk12
 - Phone: (+84) 909 77 8046
-(./resources/Ava.jpg)
+![](./resources/Ava.jpg)
