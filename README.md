@@ -76,7 +76,7 @@ Go to this link and download new python version: https://www.python.org/download
 ### Install my package
 
 ```bash
-pip install spriteutilkhangtran
+pip install spriteutilkangkang
 ```
 
 ## Contact (Author & Maintainer)

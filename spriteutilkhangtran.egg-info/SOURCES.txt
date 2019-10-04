@@ -1,8 +1,0 @@
-README.md
-setup.py
-spriteutilkhangtran/__init__.py
-spriteutilkhangtran/spriteutil.py
-spriteutilkhangtran.egg-info/PKG-INFO
-spriteutilkhangtran.egg-info/SOURCES.txt
-spriteutilkhangtran.egg-info/dependency_links.txt
-spriteutilkhangtran.egg-info/top_level.txt

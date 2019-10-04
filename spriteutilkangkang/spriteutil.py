@@ -172,12 +172,12 @@ class SpriteSheet:
             - background_color of image
         """
         if self.fd.mode == "RGBA":
-            background_color_set = set()
+            background_color_list = []
             for i in range(len(pixel_list)):
                 for j in range(len(pixel_list[i])):
                     if pixel_list[i][j][3] == 0:
-                        background_color_set.add(pixel_list[i][j])
-            return background_color_set
+                        background_color_list.append(pixel_list[i][j])
+            return background_color_list
         return find_most_common_color(self.fd)
 
     def is_background_color(self, pixel, background_color):
@@ -526,12 +526,12 @@ def detect_background_color(pixel_list, image):
         - background_color of image
     """
     if image.mode == "RGBA":
-        background_color_set = set()
+        background_color_list = []
         for i in range(len(pixel_list)):
             for j in range(len(pixel_list[i])):
                 if pixel_list[i][j][3] == 0:
-                    background_color_set.add(pixel_list[i][j])
-        return background_color_set
+                    background_color_list.append(pixel_list[i][j])
+        return background_color_list
     return find_most_common_color(image)
 
 
@@ -785,3 +785,9 @@ def draw_sprite_color(label_map, color_dict, background_color):
             else:
                 label_map[row][col] = color_dict[label_map[row][col].label]
     return label_map
+
+
+if __name__ == "__main__":
+    image = SpriteSheet("../resources/metal_slug_single_sprite.png")
+    new_image = image.create_sprite_labels_image()
+    new_image.save("./Khang.png")

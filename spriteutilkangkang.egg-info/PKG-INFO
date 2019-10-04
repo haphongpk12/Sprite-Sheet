@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: spriteutilkhangtran
+Name: spriteutilkangkang
 Version: 1.0.0
 Summary: UNKNOWN
 Home-page: https://github.com/haphongpk12/Sprite-Sheet
@@ -85,7 +85,7 @@ Description: # Sprite Sheet
         ### Install my package
         
         ```bash
-        pip install spriteutilkhangtran
+        pip install spriteutilkangkang
         ```
         
         ## Contact (Author & Maintainer)

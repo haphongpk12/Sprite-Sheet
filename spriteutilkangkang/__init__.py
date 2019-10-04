@@ -1,2 +1,2 @@
 from .spriteutil import *
-name="spriteutilkhangtran"
+name="kangkangspriteutil"
